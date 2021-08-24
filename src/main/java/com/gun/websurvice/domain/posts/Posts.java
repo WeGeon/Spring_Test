@@ -1,5 +1,6 @@
 package com.gun.websurvice.domain.posts;
 
+import com.gun.websurvice.domain.BaseTimeEntity;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -12,7 +13,7 @@ import javax.persistence.Id;
 @NoArgsConstructor
 @Getter
 @Entity
-public class Posts {
+public class Posts extends BaseTimeEntity {
 
     @Id
     @GeneratedValue
